@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  toDoList_8
+//  to-do list project 8
 //
 //  Created by Scholar on 7/18/23.
 //
@@ -9,15 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            HStack{
+                Text ("To Do List")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .padding(.all)
+ 
+                
+                Spacer()
+                Button(action: {
+                    
+                }) {
+                    Text("+")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.blue)
+                        .padding(.all)
+                }
+               
+            }
+            Spacer()
+            }
         }
-        .padding()
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
